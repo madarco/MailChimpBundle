@@ -61,7 +61,7 @@ class Client extends MCAPI
         // 
         // return $response->getContent();
         // 
-        parent::callServer($method, $params);
+        return parent::callServer($method, $params);
     }
 
     /**
