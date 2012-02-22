@@ -34,9 +34,6 @@ class JirafeMailChimpExtension extends Extension
         }
 
         $container->setParameter('mail_chimp.api_key', $config['api_key']);
-
-        $definition = $container->getDefinition('mail_chimp.client');
-        $definition->addArgument(new Reference(sprintf('mail_chimp.connection.%s', $config['connection'])));
     }
 
     /**

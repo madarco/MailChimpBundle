@@ -12,18 +12,6 @@
     </parameters>
 
     <services>
-        <!-- Connection "http" -->
-        <service id="mail_chimp.connection.http" class="%mail_chimp.connection.http.class%" public="false" />
-
-        <!-- Connection "stub" -->
-        <service id="mail_chimp.connection.stub" class="%mail_chimp.connection.stub.class%" public="false" />
-
-        <!-- Connection "https" -->
-        <service id="mail_chimp.connection.https" class="%mail_chimp.connection.http.class%" public="false">
-            <argument>true</argument>
-        </service>
-
-        <!-- Client -->
         <service id="mail_chimp.client" class="%mail_chimp.client.class%">
             <argument>%mail_chimp.api_key%</argument>
         </service>

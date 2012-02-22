@@ -3,7 +3,6 @@
 namespace Jirafe\Bundle\MailChimpBundle;
 
 use Jirafe\Bundle\MailChimpBundle\Connection\ConnectionInterface;
-use Jirafe\Bundle\MailChimpBundle\Connection\HttpConnection;
 use Mailchimp\MCAPI;
 
 class Client extends MCAPI
@@ -22,11 +21,11 @@ class Client extends MCAPI
     {
         parent::__construct($apiKey);
 
-        if (null === $connection) {
-            $connection = new HttpConnection();
-        }
-
-        $this->connection = $connection;
+        // if (null === $connection) {
+        //     $connection = new HttpConnection();
+        // }
+        // 
+        // $this->connection = $connection;
 
         $this->lastRequest  = null;
         $this->lastResponse = null;
@@ -57,10 +56,12 @@ class Client extends MCAPI
      */
     public function callServer($method, $params)
     {
-        $request  = new Request($method, $params);
-        $response = $this->call($request);
-
-        return $response->getContent();
+        // $request  = new Request($method, $params);
+        // $response = $this->call($request);
+        // 
+        // return $response->getContent();
+        // 
+        parent::callServer($method, $params);
     }
 
     /**
