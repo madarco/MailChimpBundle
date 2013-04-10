@@ -1,0 +1,29 @@
+{
+    "name": "jirafe/mailchimp-bundle",
+    "type": "symfony-bundle",
+    "description": "Mailchimp API bundle",
+    "keywords": ["common"],
+    "homepage": "http://github.com/jirafe",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Jirafe",
+            "homepage": "http://github.com/jirafe"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.*",
+    },
+    
+    "require-dev": {
+
+    },
+    
+    "suggest": {
+    },
+    
+    "autoload": {
+        "psr-0": {"Jirafe": "/"}
+    }
+}
