@@ -23,7 +23,9 @@
     "suggest": {
     },
     
+    "target-dir": "Jirafe/Bundle/MailChimpBundle",
+    
     "autoload": {
-        "psr-0": {"Jirafe": "/"}
+        "psr-0": {"Jirafe\\Bundle\\MailChimpBundle": ""}
     }
 }
